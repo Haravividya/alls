@@ -1,0 +1,265 @@
+xrun(64): 20.09-s009: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	20.09-s009: Started on May 03, 2025 at 12:28:29 IST
+xrun
+	-access +rwc
+	-f compile_list.f
+		./../../RTL/grant_arbiter.sv
+		./../../RTL/rate_limiter_16to8.sv
+		./../../RTL/sch_ctrl_fsm.sv
+		./../../RTL/scheduler_reg_config.sv
+		./../UVME/uvm_pkg/test_pkg.sv
+		./../UVME/top/ulss_top.sv
+		./../UVME/top/ulss_interface.sv
+	-uvmhome CDNS-1.1d
+	+UVM_TESTNAME=all_streams_active_test
+Recompiling... reason: file '../UVME/agent/ulss_driver.sv' is newer than expected.
+	expected: Wed Apr 30 10:14:55 2025
+	actual:   Sat May  3 10:17:33 2025
+Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /tools/cadence_march2021/XCELIUM2009/tools/methodology/UVM/CDNS-1.1d
+file: ./../UVME/uvm_pkg/test_pkg.sv
+package test_pkg;
+               |
+xmvlog: *W,TSNSPK (./../UVME/uvm_pkg/test_pkg.sv,1|15): `timescale is not specified for the package.  The default timescale of 1ns/1ns will be assumed for this package.
+	package worklib.test_pkg:sv
+		errors: 0, warnings: 1
+file: ./../UVME/top/ulss_top.sv
+	module worklib.ulss_top:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		uvm_pkg
+		cdns_uvmapi
+		cdns_assert2uvm_pkg
+		cdns_uvm_pkg
+		test_pkg
+		ulss_top
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.uvm_pkg:sv <0x043453a0>
+			streams:  21, words: 20020
+		worklib.uvm_pkg:sv <0x797541d0>
+			streams:  23, words: 36625
+		worklib.uvm_pkg:sv <0x515388c3>
+			streams:  21, words: 20063
+		worklib.uvm_pkg:sv <0x023464c8>
+			streams:  23, words: 28660
+		worklib.uvm_pkg:sv <0x55c37d28>
+			streams:  21, words: 20020
+		worklib.uvm_pkg:sv <0x1130c87a>
+			streams:  23, words: 27717
+		worklib.uvm_pkg:sv <0x387557eb>
+			streams:  21, words: 20020
+		worklib.uvm_pkg:sv <0x3da4f57c>
+			streams:  23, words: 27717
+		worklib.uvm_pkg:sv <0x1b3392c7>
+			streams:  21, words: 20020
+		worklib.uvm_pkg:sv <0x5e3fec3e>
+			streams:  23, words: 51936
+		worklib.uvm_pkg:sv <0x347a2f3c>
+			streams:  21, words: 20020
+		worklib.uvm_pkg:sv <0x716f72c3>
+			streams:  23, words: 105199
+		worklib.uvm_pkg:sv <0x6ae035d0>
+			streams:  21, words: 20223
+		worklib.uvm_pkg:sv <0x36ea6fa7>
+			streams:  25, words: 70856
+		worklib.uvm_pkg:sv <0x5f0c7e0d>
+			streams:  21, words: 20020
+		worklib.uvm_pkg:sv <0x697fa7e7>
+			streams:  23, words: 65119
+		worklib.uvm_pkg:sv <0x344af78c>
+			streams:  21, words: 20020
+		worklib.uvm_pkg:sv <0x7e09b18c>
+			streams:  23, words: 97702
+		worklib.uvm_pkg:sv <0x71c7b54c>
+			streams:  21, words: 19929
+		worklib.uvm_pkg:sv <0x7d6a272e>
+			streams:  23, words: 59770
+		worklib.uvm_pkg:sv <0x1c6da332>
+			streams:  21, words: 20020
+		worklib.test_pkg:sv <0x48df0c29>
+			streams:  22, words: 17965
+		worklib.uvm_pkg:sv <0x41b61413>
+			streams:  22, words: 22460
+		worklib.uvm_pkg:sv <0x76c360e3>
+			streams:  22, words: 23460
+		worklib.uvm_pkg:sv <0x298e76fe>
+			streams:  22, words: 21565
+		worklib.uvm_pkg:sv <0x29edaaee>
+			streams:  60, words: 56674
+		worklib.uvm_pkg:sv <0x0cffbd9b>
+			streams: 295, words: 431273
+		worklib.uvm_pkg:sv <0x7cc8d35e>
+			streams:  23, words: 313033
+		worklib.uvm_pkg:sv <0x608ed8e8>
+			streams: 177, words: 199238
+		worklib.uvm_pkg:sv <0x2613024c>
+			streams:  23, words: 333286
+		worklib.ulss_top:sv <0x4a97f86f>
+			streams: 160, words: 101260
+		worklib.test_pkg:sv <0x67ec2b48>
+			streams:   0, words:     0
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                       Instances  Unique
+		Modules:                       8       5
+		Interfaces:                    1       1
+		Verilog packages:              5       5
+		Registers:                 15683   11206
+		Scalar wires:                472       -
+		Vectored wires:              298       -
+		Named events:                  4      12
+		Always blocks:               142      37
+		Initial blocks:              348     178
+		Parallel blocks:              28      29
+		Cont. assignments:           312     117
+		Pseudo assignments:          254     254
+		Assertions:                    2       2
+		SV Class declarations:       219     333
+		SV Class specializations:    422     422
+	Writing initial simulation snapshot: worklib.ulss_top:sv
+Loading snapshot worklib.ulss_top:sv .................... Done
+SVSEED default: 1
+xmsim: *W,RNDXCELON: A newer version of the SystemVerilog constraint solver is being used which has better support for array-solving, new solve-order mechanism, and seed stability enhancements..
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /tools/cadence_march2021/XCELIUM2009/tools/xcelium/files/xmsimrc
+xcelium> source /tools/cadence_march2021/XCELIUM2009/tools/methodology/UVM/CDNS-1.1d/additions/sv/files/tcl/uvm_sim.tcl
+xcelium> run
+----------------------------------------------------------------
+CDNS-UVM-1.1d (20.09-s009)
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test all_streams_active_test...
+UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+---------------------------------------------------------------
+Name                       Type                     Size  Value
+---------------------------------------------------------------
+uvm_test_top               all_streams_active_test  -     @2706
+  env                      ulss_env                 -     @2766
+    ulss_agent             ulss_agent               -     @2812
+      drv                  ulss_driver              -     @2846
+        rsp_port           uvm_analysis_port        -     @2946
+        seq_item_port      uvm_seq_item_pull_port   -     @2895
+      mon                  ulss_monitor             -     @2977
+        analysis_port      uvm_analysis_port        -     @3684
+      sqr                  ulss_sequencer           -     @3008
+        rsp_export         uvm_analysis_export      -     @3066
+        seq_item_export    uvm_seq_item_pull_imp    -     @3614
+        arbitration_queue  array                    0     -    
+        lock_queue         array                    0     -    
+        num_last_reqs      integral                 32    'd1  
+        num_last_rsps      integral                 32    'd1  
+---------------------------------------------------------------
+
+UVM_INFO ./../UVME/tests/all_streams_active_test.sv(19) @ 0: uvm_test_top [uvm_test_top] it test first line
+UVM_INFO ./../UVME/tests/all_streams_active_test.sv(21) @ 0: uvm_test_top [all_streams_active_test] inside the all_streams_active_sequence_inst test
+UVM_INFO ./../UVME/sequence/all_streams_active_sequence.sv(18) @ 0: uvm_test_top.env.ulss_agent.sqr@@all_streams_active_sequence_inst [all_streams_active_sequence] all_streams_active_sequence: starting sequence
+UVM_INFO ./../UVME/agent/ulss_driver.sv(135) @ 78: uvm_test_top.env.ulss_agent.drv [ulss_driver] [DRV] WRITE ADDR=0 DATA=0xf
+UVM_INFO ./../UVME/sequence/all_streams_active_sequence.sv(51) @ 102: uvm_test_top.env.ulss_agent.sqr@@all_streams_active_sequence_inst [all_streams_active_sequence] out_stream_0_reg=0xf
+UVM_INFO ./../UVME/agent/ulss_driver.sv(135) @ 112: uvm_test_top.env.ulss_agent.drv [ulss_driver] [DRV] WRITE ADDR=1 DATA=0xf0
+UVM_INFO ./../UVME/sequence/all_streams_active_sequence.sv(83) @ 146: uvm_test_top.env.ulss_agent.sqr@@all_streams_active_sequence_inst [all_streams_active_sequence] out_stream_1_reg=0xf0
+UVM_INFO ./../UVME/agent/ulss_driver.sv(135) @ 156: uvm_test_top.env.ulss_agent.drv [ulss_driver] [DRV] WRITE ADDR=2 DATA=0xf00
+UVM_INFO ./../UVME/sequence/all_streams_active_sequence.sv(114) @ 190: uvm_test_top.env.ulss_agent.sqr@@all_streams_active_sequence_inst [all_streams_active_sequence] out_stream_2_reg=0xf00
+UVM_INFO ./../UVME/agent/ulss_driver.sv(135) @ 200: uvm_test_top.env.ulss_agent.drv [ulss_driver] [DRV] WRITE ADDR=3 DATA=0xf000
+UVM_INFO ./../UVME/sequence/all_streams_active_sequence.sv(146) @ 222: uvm_test_top.env.ulss_agent.sqr@@all_streams_active_sequence_inst [all_streams_active_sequence] out_stream_3_reg=0xf000
+UVM_INFO ./../UVME/agent/ulss_driver.sv(135) @ 226: uvm_test_top.env.ulss_agent.drv [ulss_driver] [DRV] WRITE ADDR=4 DATA=0x8003
+UVM_INFO ./../UVME/sequence/all_streams_active_sequence.sv(180) @ 262: uvm_test_top.env.ulss_agent.sqr@@all_streams_active_sequence_inst [all_streams_active_sequence] in_stream_0_reg=0x8003
+UVM_INFO ./../UVME/agent/ulss_driver.sv(135) @ 272: uvm_test_top.env.ulss_agent.drv [ulss_driver] [DRV] WRITE ADDR=5 DATA=0x8002
+UVM_INFO ./../UVME/sequence/all_streams_active_sequence.sv(212) @ 294: uvm_test_top.env.ulss_agent.sqr@@all_streams_active_sequence_inst [all_streams_active_sequence] in_stream_1_reg=0x8002
+UVM_INFO ./../UVME/agent/ulss_driver.sv(135) @ 304: uvm_test_top.env.ulss_agent.drv [ulss_driver] [DRV] WRITE ADDR=6 DATA=0x8003
+UVM_INFO ./../UVME/sequence/all_streams_active_sequence.sv(244) @ 338: uvm_test_top.env.ulss_agent.sqr@@all_streams_active_sequence_inst [all_streams_active_sequence] in_stream_2_reg=0x8003
+UVM_INFO ./../UVME/agent/ulss_driver.sv(135) @ 348: uvm_test_top.env.ulss_agent.drv [ulss_driver] [DRV] WRITE ADDR=7 DATA=0x8003
+UVM_INFO ./../UVME/sequence/all_streams_active_sequence.sv(276) @ 382: uvm_test_top.env.ulss_agent.sqr@@all_streams_active_sequence_inst [all_streams_active_sequence] in_stream_3_reg=0x8003
+UVM_INFO ./../UVME/agent/ulss_driver.sv(135) @ 392: uvm_test_top.env.ulss_agent.drv [ulss_driver] [DRV] WRITE ADDR=8 DATA=0x8003
+UVM_INFO ./../UVME/sequence/all_streams_active_sequence.sv(308) @ 414: uvm_test_top.env.ulss_agent.sqr@@all_streams_active_sequence_inst [all_streams_active_sequence] in_stream_4_reg=0x8003
+UVM_INFO ./../UVME/agent/ulss_driver.sv(135) @ 424: uvm_test_top.env.ulss_agent.drv [ulss_driver] [DRV] WRITE ADDR=9 DATA=0x8003
+UVM_INFO ./../UVME/sequence/all_streams_active_sequence.sv(340) @ 446: uvm_test_top.env.ulss_agent.sqr@@all_streams_active_sequence_inst [all_streams_active_sequence] in_stream_5_reg=0x8003
+UVM_INFO ./../UVME/agent/ulss_driver.sv(135) @ 456: uvm_test_top.env.ulss_agent.drv [ulss_driver] [DRV] WRITE ADDR=10 DATA=0x8003
+UVM_INFO ./../UVME/sequence/all_streams_active_sequence.sv(373) @ 478: uvm_test_top.env.ulss_agent.sqr@@all_streams_active_sequence_inst [all_streams_active_sequence] in_stream_6_reg=0x8003
+UVM_INFO ./../UVME/agent/ulss_driver.sv(135) @ 488: uvm_test_top.env.ulss_agent.drv [ulss_driver] [DRV] WRITE ADDR=11 DATA=0x8003
+UVM_INFO ./../UVME/sequence/all_streams_active_sequence.sv(406) @ 522: uvm_test_top.env.ulss_agent.sqr@@all_streams_active_sequence_inst [all_streams_active_sequence] in_stream_7_reg=0x8003
+UVM_INFO ./../UVME/agent/ulss_driver.sv(135) @ 532: uvm_test_top.env.ulss_agent.drv [ulss_driver] [DRV] WRITE ADDR=12 DATA=0x8003
+UVM_INFO ./../UVME/sequence/all_streams_active_sequence.sv(439) @ 554: uvm_test_top.env.ulss_agent.sqr@@all_streams_active_sequence_inst [all_streams_active_sequence] in_stream_8_reg=0x8003
+UVM_INFO ./../UVME/agent/ulss_driver.sv(135) @ 564: uvm_test_top.env.ulss_agent.drv [ulss_driver] [DRV] WRITE ADDR=13 DATA=0x8003
+UVM_INFO ./../UVME/sequence/all_streams_active_sequence.sv(472) @ 586: uvm_test_top.env.ulss_agent.sqr@@all_streams_active_sequence_inst [all_streams_active_sequence] in_stream_9_reg=0x8003
+UVM_INFO ./../UVME/agent/ulss_driver.sv(135) @ 596: uvm_test_top.env.ulss_agent.drv [ulss_driver] [DRV] WRITE ADDR=14 DATA=0x8003
+UVM_INFO ./../UVME/sequence/all_streams_active_sequence.sv(504) @ 630: uvm_test_top.env.ulss_agent.sqr@@all_streams_active_sequence_inst [all_streams_active_sequence] in_stream_10_reg=0x8003
+UVM_INFO ./../UVME/agent/ulss_driver.sv(135) @ 640: uvm_test_top.env.ulss_agent.drv [ulss_driver] [DRV] WRITE ADDR=15 DATA=0x8003
+UVM_INFO ./../UVME/sequence/all_streams_active_sequence.sv(536) @ 674: uvm_test_top.env.ulss_agent.sqr@@all_streams_active_sequence_inst [all_streams_active_sequence] in_stream_11_reg=0x8003
+UVM_INFO ./../UVME/agent/ulss_driver.sv(135) @ 684: uvm_test_top.env.ulss_agent.drv [ulss_driver] [DRV] WRITE ADDR=16 DATA=0x8003
+UVM_INFO ./../UVME/sequence/all_streams_active_sequence.sv(569) @ 706: uvm_test_top.env.ulss_agent.sqr@@all_streams_active_sequence_inst [all_streams_active_sequence] in_stream_12_reg=0x8003
+UVM_INFO ./../UVME/agent/ulss_driver.sv(135) @ 716: uvm_test_top.env.ulss_agent.drv [ulss_driver] [DRV] WRITE ADDR=17 DATA=0x8003
+UVM_INFO ./../UVME/sequence/all_streams_active_sequence.sv(602) @ 738: uvm_test_top.env.ulss_agent.sqr@@all_streams_active_sequence_inst [all_streams_active_sequence] in_stream_13_reg=0x8003
+UVM_INFO ./../UVME/agent/ulss_driver.sv(135) @ 748: uvm_test_top.env.ulss_agent.drv [ulss_driver] [DRV] WRITE ADDR=18 DATA=0x8003
+UVM_INFO ./../UVME/sequence/all_streams_active_sequence.sv(634) @ 770: uvm_test_top.env.ulss_agent.sqr@@all_streams_active_sequence_inst [all_streams_active_sequence] in_stream_14_reg=0x8003
+UVM_INFO ./../UVME/agent/ulss_driver.sv(135) @ 780: uvm_test_top.env.ulss_agent.drv [ulss_driver] [DRV] WRITE ADDR=19 DATA=0x8003
+UVM_INFO ./../UVME/sequence/all_streams_active_sequence.sv(665) @ 814: uvm_test_top.env.ulss_agent.sqr@@all_streams_active_sequence_inst [all_streams_active_sequence] in_stream_15_reg=0x8003
+UVM_INFO ./../UVME/sequence/all_streams_active_sequence.sv(708) @ 856: uvm_test_top.env.ulss_agent.sqr@@all_streams_active_sequence_inst [all_streams_active_sequence] Sending packet on stream 0
+UVM_INFO ./../UVME/sequence/all_streams_active_sequence.sv(744) @ 876: uvm_test_top.env.ulss_agent.sqr@@all_streams_active_sequence_inst [all_streams_active_sequence] Sending packet on stream 1
+UVM_INFO ./../UVME/sequence/all_streams_active_sequence.sv(780) @ 910: uvm_test_top.env.ulss_agent.sqr@@all_streams_active_sequence_inst [all_streams_active_sequence] Sending packet on stream 2
+UVM_INFO ./../UVME/sequence/all_streams_active_sequence.sv(816) @ 930: uvm_test_top.env.ulss_agent.sqr@@all_streams_active_sequence_inst [all_streams_active_sequence] Sending packet on stream 3
+UVM_INFO ./../UVME/sequence/all_streams_active_sequence.sv(853) @ 974: uvm_test_top.env.ulss_agent.sqr@@all_streams_active_sequence_inst [all_streams_active_sequence] Sending packet on stream 4
+UVM_INFO ./../UVME/sequence/all_streams_active_sequence.sv(892) @ 1014: uvm_test_top.env.ulss_agent.sqr@@all_streams_active_sequence_inst [all_streams_active_sequence] Sending packet on stream 5
+UVM_INFO ./../UVME/sequence/all_streams_active_sequence.sv(930) @ 1034: uvm_test_top.env.ulss_agent.sqr@@all_streams_active_sequence_inst [all_streams_active_sequence] Sending packet on stream 6
+UVM_INFO ./../UVME/sequence/all_streams_active_sequence.sv(968) @ 1054: uvm_test_top.env.ulss_agent.sqr@@all_streams_active_sequence_inst [all_streams_active_sequence] Sending packet on stream 7
+UVM_INFO ./../UVME/sequence/all_streams_active_sequence.sv(1009) @ 1074: uvm_test_top.env.ulss_agent.sqr@@all_streams_active_sequence_inst [all_streams_active_sequence] Sending packet on stream 8
+UVM_INFO ./../UVME/sequence/all_streams_active_sequence.sv(1048) @ 1094: uvm_test_top.env.ulss_agent.sqr@@all_streams_active_sequence_inst [all_streams_active_sequence] Sending packet on stream 9
+UVM_INFO ./../UVME/sequence/all_streams_active_sequence.sv(1088) @ 1114: uvm_test_top.env.ulss_agent.sqr@@all_streams_active_sequence_inst [all_streams_active_sequence] Sending packet on stream 10
+UVM_INFO ./../UVME/sequence/all_streams_active_sequence.sv(1128) @ 1134: uvm_test_top.env.ulss_agent.sqr@@all_streams_active_sequence_inst [all_streams_active_sequence] Sending packet on stream 11
+UVM_INFO ./../UVME/sequence/all_streams_active_sequence.sv(1168) @ 1174: uvm_test_top.env.ulss_agent.sqr@@all_streams_active_sequence_inst [all_streams_active_sequence] Sending packet on stream 12
+UVM_INFO ./../UVME/sequence/all_streams_active_sequence.sv(1212) @ 1214: uvm_test_top.env.ulss_agent.sqr@@all_streams_active_sequence_inst [all_streams_active_sequence] Sending packet on stream 13
+UVM_INFO ./../UVME/sequence/all_streams_active_sequence.sv(1250) @ 1234: uvm_test_top.env.ulss_agent.sqr@@all_streams_active_sequence_inst [all_streams_active_sequence] Sending packet on stream 14
+UVM_INFO ./../UVME/sequence/all_streams_active_sequence.sv(1288) @ 1254: uvm_test_top.env.ulss_agent.sqr@@all_streams_active_sequence_inst [all_streams_active_sequence] Sending packet on stream 15
+UVM_INFO ./../UVME/sequence/all_streams_active_sequence.sv(1416) @ 1270: uvm_test_top.env.ulss_agent.sqr@@all_streams_active_sequence_inst [all_streams_active_sequence] Sequence completed successfully
+UVM_INFO ./../UVME/tests/all_streams_active_test.sv(27) @ 1270: uvm_test_top [all_streams_active_test] all_streams_active_sequence scenario 2 is completed
+UVM_WARNING ./../UVME/agent/ulss_driver.sv(80) @ 80078: uvm_test_top.env.ulss_agent.drv [ulss_driver] Global simulation timeout reached, ending simulation
+UVM_INFO /tools/cadence_march2021/XCELIUM2009/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_objection.svh(1268) @ 80118: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   64
+UVM_WARNING :    1
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[TEST_DONE]     1
+[UVMTOP]     1
+[all_streams_active_sequence]    38
+[all_streams_active_test]     2
+[ulss_driver]    21
+[uvm_test_top]     1
+Simulation complete via $finish(1) at time 80118 NS + 45
+/tools/cadence_march2021/XCELIUM2009/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_root.svh:457     $finish;
+xcelium> exit
+TOOL:	xrun(64)	20.09-s009: Exiting on May 03, 2025 at 12:28:34 IST  (total: 00:00:05)
