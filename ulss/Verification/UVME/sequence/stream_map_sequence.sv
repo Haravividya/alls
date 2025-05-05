@@ -21,13 +21,13 @@ class stream_map_sequence extends uvm_sequence#(ulss_tx);
     tx = ulss_tx::type_id::create("tx");
     
     // Assert reset (active low)
-   /* `uvm_do_with(tx, {
+   `uvm_do_with(tx, {
       tx.rate_limiter_16to4_rstn == 1'b0;
       tx.sch_reg_wr_en == 1'b0;
     });
     
     // Allow some cycles for reset
-    repeat(5) #10;*/
+    repeat(5) #10;
     
     // De-assert reset and configure OUT_STREAM_0_REG
     // This maps which input stream goes to output stream 0
