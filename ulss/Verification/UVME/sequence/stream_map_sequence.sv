@@ -48,8 +48,8 @@ class stream_map_sequence extends uvm_sequence#(ulss_tx);
       tx.rate_limiter_16to4_rstn == 1'b1;
       tx.sch_reg_wr_en   == 1'b1;
       tx.sch_reg_wr_addr == 5'd4; // IN_STREAM_0_REG
-      tx.sch_reg_wr_data[14:0]  == 15'd3;  // 3 tokens wait
-      tx.sch_reg_wr_data[63:15] == 49'd1;  // 1 packet
+      tx.sch_reg_wr_data[15:0]  == 16'd35495;  // 3 tokens wait
+      tx.sch_reg_wr_data[63:16] == 48'd1;  // 1 packet
     });
     
     `uvm_info(get_type_name(), $sformatf("IN_STREAM_0_REG=0x%0h", tx.sch_reg_wr_data), UVM_LOW);
